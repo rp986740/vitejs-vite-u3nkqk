@@ -36,7 +36,7 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({ suggestions }) => {
   return (
     <div>
       {showSuggestions && (
-        <div className="flex">
+        <div className="flex items-center flex-wrap max-w-lg gap-y-1 gap-x-1">
           {filteredSuggestions.map((suggestion) => (
             <div
               className="cursor-pointer bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"
